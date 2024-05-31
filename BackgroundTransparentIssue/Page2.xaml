@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BackgroundTransparentIssue.Page2"
+             Shell.PresentationMode="ModalAnimated"
+             Background="Transparent">
+    
+    <Grid RowDefinitions="*, auto" 
+          Background="Transparent">
+        
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"></TapGestureRecognizer>
+        </Grid.GestureRecognizers>
+        
+        <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center">
+            <Label Text="Lbl 1"></Label>
+            <Label Text="Click at the top of the screen to Pop this page."></Label>
+            <Label Text="Lbl 3"></Label>
+            <Label Text="Lbl 4"></Label>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
